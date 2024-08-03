@@ -1,0 +1,116 @@
+/* Global Styles */
+:root{
+    --box-length:100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body {
+    font-family: sans-serif, Arial;
+    background-color: #505050;
+}
+
+#title {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.msgContainer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.showMsg {
+    height: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #0fe14e;
+    text-shadow: 1px 1px 10px #2a2a2a;
+}
+
+.draw {
+    color: #d80e0e;
+}
+
+.hide {
+    height: 30px;
+    visibility: hidden;
+}
+
+main {
+    width: max-content;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #424242;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px rgb(180 180 180 / 10%);
+    text-align: center;
+}
+
+/* Game Box Styles */
+
+#gameBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.eachBtn {
+    background-color: #767676;
+    color: #fff;
+    height: var(--box-length);
+    width: var(--box-length);
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+}
+
+.resetBtn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.resetBtn:hover {
+    background-color: #3e8e41;
+}
+
+.resetBtn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer{
+    text-align: center;
+    color: #fff;
+    background-color: #424242;
+    height: 60px;
+    margin-top: 35px;
+}
+#credit{
+    font-size: 18px;
+    margin: 8px auto;
+}
+#loveIcon{
+    height: 23px;
+    position: relative;
+    top: 5px;
+}
+footer a{
+    color: #5f95f2;
+}
